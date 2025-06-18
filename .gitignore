@@ -1,7 +1,11 @@
-# Compiled class file
+# ===========================================
+# Java & Maven Project .gitignore
+# ===========================================
+
+# Compiled class files
 *.class
 
-# Log file
+# Log files
 *.log
 
 # BlueJ files
@@ -10,7 +14,7 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package Files
 *.jar
 *.war
 *.nar
@@ -19,6 +23,173 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# virtual machine crash logs
 hs_err_pid*
 replay_pid*
+
+# ===========================================
+# Maven specific
+# ===========================================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.properties
+
+# Maven Surefire reports
+**/target/surefire-reports/
+**/target/failsafe-reports/
+
+# ===========================================
+# IDE specific files
+# ===========================================
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# ===========================================
+# Operating System files
+# ===========================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
+# Temporal specific
+# ===========================================
+
+# Temporal server data (if running locally)
+temporal-data/
+.temporal/
+
+# Docker related (if using Docker for Temporal)
+docker-compose.override.yml
+.env.local
+.env.*.local
+
+# ===========================================
+# Build and dependency directories
+# ===========================================
+
+# Node modules (if any frontend components)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===========================================
+# Security and sensitive files
+# ===========================================
+
+# API keys and secrets
+.env
+*.env
+secrets/
+*.key
+*.pem
+*.p12
+*.jks
+
+# Configuration files with sensitive data
+config/local.properties
+application-local.properties
+application-dev.properties
+
+# ===========================================
+# Testing and coverage
+# ===========================================
+
+# JaCoCo test coverage
+*.exec
+jacoco.xml
+
+# TestNG
+test-output/
+
+# ===========================================
+# Miscellaneous
+# ===========================================
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+*.temp
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
